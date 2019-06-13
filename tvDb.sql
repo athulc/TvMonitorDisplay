@@ -34,14 +34,6 @@ CREATE TABLE `tadmin` (
   `upass` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tadmin`
---
-
-INSERT INTO `tadmin` (`uid`, `uname`, `upass`) VALUES
-(1, 'admin', 'Welcome@123');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `tbday`
@@ -53,23 +45,6 @@ CREATE TABLE `tbday` (
   `bdate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tbday`
---
-
-INSERT INTO `tbday` (`bid`, `name`, `bdate`) VALUES
-(10, 'Urooj Ahmed', '2019-06-26'),
-(11, 'Udaya Kumar', '2019-03-21'),
-(12, 'Nagesh Kumar', '2019-09-16'),
-(13, 'Moulali Shaik', '2019-04-16'),
-(14, 'Jagdish Samantaray', '2019-05-01'),
-(15, 'Krishna Botla', '2019-06-10'),
-(16, 'Abhilash Satapathy', '2019-05-17'),
-(17, 'Surendra Nath', '2019-06-28'),
-(18, 'Chandra sekhar', '2019-06-15'),
-(19, 'Balaji Kumar', '2019-05-14');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `timages`
@@ -82,20 +57,6 @@ CREATE TABLE `timages` (
   `Ordr` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `timages`
---
-
-INSERT INTO `timages` (`id`, `Source`, `Active`, `Ordr`) VALUES
-(83, 'cloudcity.jpg', 'no', 1),
-(84, 'boardroom.jpg', 'yes', 2),
-(85, 'ai.jpg', 'yes', 7),
-(86, 'image7.jpg', 'yes', 5),
-(87, 'latestpic1.jpg', 'yes', 4),
-(88, 'March_2019_Case_breakup.jpg', 'yes', 29),
-(90, 'March_2019_Trend.jpg', 'yes', 20);
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `tmain`
@@ -134,16 +95,6 @@ CREATE TABLE `tmessages` (
   `Bcolor` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tmessages`
---
-
-INSERT INTO `tmessages` (`Mid`, `Source`, `Font`, `Size`, `Active`, `Ordr`, `Fcolor`, `Bcolor`) VALUES
-(27, '\"If you want to lift yourself up, lift up someone else.\" ', 'Dancing Script', 40, 'yes', 4, '#27c6e7', '#ffffff'),
-(28, '\"Life is really simple, but we insist on making it complicated.\"', 'Dancing Script', 40, 'yes', 1, '#37c4ec', '#ffffff'),
-(30, '\"Coming together is a beginning. Keeping together is progress. Working together is a success.\" --Henry Ford', 'Dancing Script', 40, 'yes', 2, '#29b8d1', '#ffffff');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `twebpage`
@@ -156,17 +107,6 @@ CREATE TABLE `twebpage` (
   `Ordr` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `twebpage`
---
-
-INSERT INTO `twebpage` (`wid`, `Source`, `Active`, `Ordr`) VALUES
-(6, 'http://www.gmail.com', 'no', 4),
-(18, 'messages.php', 'yes', 9),
-(19, 'images.php', 'no', 8),
-(24, 'https://www.tutorialspoint.com/css/', 'no', 2),
-(25, 'https://jda.lightning.force.com/lightning/r/Dashboard/01Z39000000jhj3EAA/view?queryScope=userFolders', 'no', 1),
-(27, 'https://www.bbc.com', 'yes', 0);
 
 --
 -- Indexes for dumped tables
